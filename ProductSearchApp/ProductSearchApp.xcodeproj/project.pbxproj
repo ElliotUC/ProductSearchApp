@@ -11,7 +11,6 @@
 		93B034FD26128E14009BD739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B034FC26128E14009BD739 /* AppDelegate.swift */; };
 		93B034FF26128E14009BD739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B034FE26128E14009BD739 /* SceneDelegate.swift */; };
 		93B0350126128E14009BD739 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0350026128E14009BD739 /* ViewController.swift */; };
-		93B0350426128E14009BD739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B0350226128E14009BD739 /* Main.storyboard */; };
 		93B0350626128E17009BD739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B0350526128E17009BD739 /* Assets.xcassets */; };
 		93B0350926128E17009BD739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B0350726128E17009BD739 /* LaunchScreen.storyboard */; };
 		93B0351426128E18009BD739 /* ProductSearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0351326128E18009BD739 /* ProductSearchAppTests.swift */; };
@@ -27,6 +26,18 @@
 		93B035C12612DE6B009BD739 /* ProductResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B035C02612DE6B009BD739 /* ProductResultService.swift */; };
 		93B035C62612E1D1009BD739 /* ProductResultListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B035C52612E1D1009BD739 /* ProductResultListViewModel.swift */; };
 		93B035CB2612E39D009BD739 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B035CA2612E39D009BD739 /* ProductViewModel.swift */; };
+		93B035D126138BEB009BD739 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 93B035D026138BEB009BD739 /* ProximaNova-Regular.otf */; };
+		93B035D626138DE9009BD739 /* ProximaNova-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 93B035D526138DE9009BD739 /* ProximaNova-SemiBold.otf */; };
+		93B035DB26138EB6009BD739 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 93B035DA26138EB6009BD739 /* ProximaNova-Light.otf */; };
+		93B035E026139067009BD739 /* ProximaNova-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 93B035DF26139067009BD739 /* ProximaNova-Thin.otf */; };
+		93B035E626139257009BD739 /* ListProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B035E526139257009BD739 /* ListProductCell.swift */; };
+		93B035EC26139FB2009BD739 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B035EB26139FB2009BD739 /* UIImageView+Download.swift */; };
+		93B035FB26152947009BD739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B0350226128E14009BD739 /* Main.storyboard */; };
+		93B0363026155607009BD739 /* lottie-loading3.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B0362F26155607009BD739 /* lottie-loading3.json */; };
+		93B0363D261572A1009BD739 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0363C261572A1009BD739 /* LoadingView.swift */; };
+		93B03642261574E9009BD739 /* ScreenManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B03641261574E9009BD739 /* ScreenManagement.swift */; };
+		93B0364D26157825009BD739 /* UIView+MainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0364C26157825009BD739 /* UIView+MainThread.swift */; };
+		93B0367726159461009BD739 /* search-lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B0367626159461009BD739 /* search-lottie.json */; };
 		B5D72862C23372B5FF4D4F12 /* Pods_ProductSearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59AB66D3EC3500868A4B232E /* Pods_ProductSearchApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +86,17 @@
 		93B035C02612DE6B009BD739 /* ProductResultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResultService.swift; sourceTree = "<group>"; };
 		93B035C52612E1D1009BD739 /* ProductResultListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResultListViewModel.swift; sourceTree = "<group>"; };
 		93B035CA2612E39D009BD739 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		93B035D026138BEB009BD739 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		93B035D526138DE9009BD739 /* ProximaNova-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SemiBold.otf"; sourceTree = "<group>"; };
+		93B035DA26138EB6009BD739 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		93B035DF26139067009BD739 /* ProximaNova-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Thin.otf"; sourceTree = "<group>"; };
+		93B035E526139257009BD739 /* ListProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductCell.swift; sourceTree = "<group>"; };
+		93B035EB26139FB2009BD739 /* UIImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
+		93B0362F26155607009BD739 /* lottie-loading3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-loading3.json"; sourceTree = "<group>"; };
+		93B0363C261572A1009BD739 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		93B03641261574E9009BD739 /* ScreenManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenManagement.swift; sourceTree = "<group>"; };
+		93B0364C26157825009BD739 /* UIView+MainThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MainThread.swift"; sourceTree = "<group>"; };
+		93B0367626159461009BD739 /* search-lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-lottie.json"; sourceTree = "<group>"; };
 		A86E5DF21F20B6FD3B81410F /* Pods-ProductSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductSearchApp.debug.xcconfig"; path = "Target Support Files/Pods-ProductSearchApp/Pods-ProductSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C10B36F32AE974946BF077F0 /* Pods-ProductSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductSearchApp.release.xcconfig"; path = "Target Support Files/Pods-ProductSearchApp/Pods-ProductSearchApp.release.xcconfig"; sourceTree = "<group>"; };
 		FC5D57F906459A0D1CE664EE /* Pods-ProductSearchAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductSearchAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ProductSearchAppTests/Pods-ProductSearchAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,11 +164,15 @@
 		93B034FB26128E14009BD739 /* ProductSearchApp */ = {
 			isa = PBXGroup;
 			children = (
+				93B034FC26128E14009BD739 /* AppDelegate.swift */,
+				93B034FE26128E14009BD739 /* SceneDelegate.swift */,
+				93B0360A261540AD009BD739 /* Views */,
+				93B035EA26139F88009BD739 /* Extensions */,
+				93B035E426139240009BD739 /* Cell */,
+				93B035CF26138BDD009BD739 /* Fonts */,
 				93B035BA2612DA82009BD739 /* Services */,
 				93B035A72612D89C009BD739 /* Model */,
 				93B0359C2612D47F009BD739 /* API */,
-				93B034FC26128E14009BD739 /* AppDelegate.swift */,
-				93B034FE26128E14009BD739 /* SceneDelegate.swift */,
 				93B0350026128E14009BD739 /* ViewController.swift */,
 				93B0350226128E14009BD739 /* Main.storyboard */,
 				93B0350526128E17009BD739 /* Assets.xcassets */,
@@ -155,6 +181,8 @@
 				93B0358826129DD3009BD739 /* Coordinator.swift */,
 				93B035C52612E1D1009BD739 /* ProductResultListViewModel.swift */,
 				93B035CA2612E39D009BD739 /* ProductViewModel.swift */,
+				93B0367626159461009BD739 /* search-lottie.json */,
+				93B0362F26155607009BD739 /* lottie-loading3.json */,
 			);
 			path = ProductSearchApp;
 			sourceTree = "<group>";
@@ -196,6 +224,59 @@
 				93B035C02612DE6B009BD739 /* ProductResultService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		93B035CF26138BDD009BD739 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				93B035DF26139067009BD739 /* ProximaNova-Thin.otf */,
+				93B035DA26138EB6009BD739 /* ProximaNova-Light.otf */,
+				93B035D026138BEB009BD739 /* ProximaNova-Regular.otf */,
+				93B035D526138DE9009BD739 /* ProximaNova-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		93B035E426139240009BD739 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93B035E526139257009BD739 /* ListProductCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		93B035EA26139F88009BD739 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93B035EB26139FB2009BD739 /* UIImageView+Download.swift */,
+				93B0364C26157825009BD739 /* UIView+MainThread.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93B0360A261540AD009BD739 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93B03641261574E9009BD739 /* ScreenManagement.swift */,
+				93B0366A26159285009BD739 /* Loading */,
+				93B0366B261592A0009BD739 /* Welcome */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93B0366A26159285009BD739 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				93B0363C261572A1009BD739 /* LoadingView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		93B0366B261592A0009BD739 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		CD194D310C01D371553F980D /* Frameworks */ = {
@@ -314,9 +395,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B035FB26152947009BD739 /* Main.storyboard in Resources */,
+				93B035D626138DE9009BD739 /* ProximaNova-SemiBold.otf in Resources */,
 				93B0350926128E17009BD739 /* LaunchScreen.storyboard in Resources */,
+				93B0367726159461009BD739 /* search-lottie.json in Resources */,
+				93B0363026155607009BD739 /* lottie-loading3.json in Resources */,
+				93B035D126138BEB009BD739 /* ProximaNova-Regular.otf in Resources */,
 				93B0350626128E17009BD739 /* Assets.xcassets in Resources */,
-				93B0350426128E14009BD739 /* Main.storyboard in Resources */,
+				93B035E026139067009BD739 /* ProximaNova-Thin.otf in Resources */,
+				93B035DB26138EB6009BD739 /* ProximaNova-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,21 +509,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B035EC26139FB2009BD739 /* UIImageView+Download.swift in Sources */,
 				93B035A92612D8C8009BD739 /* ProductResult.swift in Sources */,
 				93B0358926129DD4009BD739 /* Coordinator.swift in Sources */,
 				93B0350126128E14009BD739 /* ViewController.swift in Sources */,
+				93B0364D26157825009BD739 /* UIView+MainThread.swift in Sources */,
 				93B0358E2612C70D009BD739 /* Product.swift in Sources */,
 				93B035932612CC1B009BD739 /* Installments.swift in Sources */,
 				93B035982612CDE0009BD739 /* Shipping.swift in Sources */,
 				93B035BC2612DAAA009BD739 /* ProductResultRequest.swift in Sources */,
 				93B034FD26128E14009BD739 /* AppDelegate.swift in Sources */,
 				93B0359E2612D48F009BD739 /* APIRequest.swift in Sources */,
+				93B03642261574E9009BD739 /* ScreenManagement.swift in Sources */,
 				93B034FF26128E14009BD739 /* SceneDelegate.swift in Sources */,
 				93B035C12612DE6B009BD739 /* ProductResultService.swift in Sources */,
 				93B035AE2612D918009BD739 /* Paging.swift in Sources */,
 				93B035C62612E1D1009BD739 /* ProductResultListViewModel.swift in Sources */,
+				93B035E626139257009BD739 /* ListProductCell.swift in Sources */,
 				93B035A32612D4BB009BD739 /* APIClient.swift in Sources */,
 				93B035CB2612E39D009BD739 /* ProductViewModel.swift in Sources */,
+				93B0363D261572A1009BD739 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

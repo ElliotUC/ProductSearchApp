@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,15 +25,99 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="eGF-vd-t18">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListProductCell" rowHeight="150" id="eGF-vd-t18" customClass="ListProductCell" customModule="ProductSearchApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGF-vd-t18" id="g5S-g8-z0N">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s1A-A1-2zs">
+                                                    <rect key="frame" x="13" y="13" width="121" height="124"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="121" id="0Tt-zr-dHM"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zapatilla Niño DC Pure Elast txse B sh Negro" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNW-zz-tIN">
+                                                    <rect key="frame" x="149" y="13" width="245" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="o6v-2h-QpJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.74748501712328763" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 15.990" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aau-OT-dEq">
+                                                    <rect key="frame" x="149" y="59" width="245" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="B4M-Sy-915"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="en" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-r2-GRm">
+                                                    <rect key="frame" x="149" y="86" width="23" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="23" id="a4y-OY-QtR"/>
+                                                        <constraint firstAttribute="height" constant="21" id="diS-KK-vwb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6x $ 2165 sin interés" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CM5-Gq-5uR">
+                                                    <rect key="frame" x="172" y="86" width="222" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="SLm-4S-tEe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Envío gratis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVS-KZ-YbT">
+                                                    <rect key="frame" x="149" y="110" width="214" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="bG5-Mm-lWy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gOe-r2-GRm" firstAttribute="leading" secondItem="s1A-A1-2zs" secondAttribute="trailing" constant="15" id="1JA-Po-yIB"/>
+                                                <constraint firstItem="bVS-KZ-YbT" firstAttribute="top" secondItem="CM5-Gq-5uR" secondAttribute="bottom" constant="3" id="1MF-4u-sZe"/>
+                                                <constraint firstItem="aNW-zz-tIN" firstAttribute="leading" secondItem="s1A-A1-2zs" secondAttribute="trailing" constant="15" id="5Oz-O3-FwE"/>
+                                                <constraint firstItem="CM5-Gq-5uR" firstAttribute="top" secondItem="Aau-OT-dEq" secondAttribute="bottom" constant="3" id="BLM-4l-MeE"/>
+                                                <constraint firstAttribute="trailing" secondItem="CM5-Gq-5uR" secondAttribute="trailing" constant="20" symbolic="YES" id="IKn-li-i1Y"/>
+                                                <constraint firstItem="s1A-A1-2zs" firstAttribute="top" secondItem="g5S-g8-z0N" secondAttribute="top" constant="13" id="Lqd-ew-2Y4"/>
+                                                <constraint firstItem="Aau-OT-dEq" firstAttribute="leading" secondItem="s1A-A1-2zs" secondAttribute="trailing" constant="15" id="SJu-bR-6My"/>
+                                                <constraint firstAttribute="trailing" secondItem="Aau-OT-dEq" secondAttribute="trailing" constant="20" symbolic="YES" id="ZBo-kA-0dP"/>
+                                                <constraint firstAttribute="bottom" secondItem="s1A-A1-2zs" secondAttribute="bottom" constant="13" id="ZNT-qZ-EyR"/>
+                                                <constraint firstAttribute="trailing" secondItem="bVS-KZ-YbT" secondAttribute="trailing" constant="51" id="aQF-aj-ZQF"/>
+                                                <constraint firstItem="s1A-A1-2zs" firstAttribute="leading" secondItem="g5S-g8-z0N" secondAttribute="leading" constant="13" id="dnI-TI-z9o"/>
+                                                <constraint firstItem="aNW-zz-tIN" firstAttribute="top" secondItem="g5S-g8-z0N" secondAttribute="top" constant="13" id="ejl-oE-dMl"/>
+                                                <constraint firstItem="Aau-OT-dEq" firstAttribute="top" secondItem="aNW-zz-tIN" secondAttribute="bottom" constant="6" id="hO1-oH-qF6"/>
+                                                <constraint firstAttribute="trailing" secondItem="aNW-zz-tIN" secondAttribute="trailing" constant="20" symbolic="YES" id="oR5-Vz-JLz"/>
+                                                <constraint firstItem="bVS-KZ-YbT" firstAttribute="leading" secondItem="s1A-A1-2zs" secondAttribute="trailing" constant="15" id="pWf-61-cWF"/>
+                                                <constraint firstItem="gOe-r2-GRm" firstAttribute="top" secondItem="Aau-OT-dEq" secondAttribute="bottom" constant="3" id="raI-Qy-Gzx"/>
+                                                <constraint firstItem="CM5-Gq-5uR" firstAttribute="leading" secondItem="gOe-r2-GRm" secondAttribute="trailing" id="vFb-XS-DwJ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="productImage" destination="s1A-A1-2zs" id="WYe-A3-KW8"/>
+                                            <outlet property="productName" destination="aNW-zz-tIN" id="7bv-y2-FZw"/>
+                                            <outlet property="productPrice" destination="Aau-OT-dEq" id="kiv-hh-9jv"/>
+                                            <outlet property="productRate" destination="CM5-Gq-5uR" id="RC3-t6-z38"/>
+                                            <outlet property="shipping" destination="bVS-KZ-YbT" id="ao4-to-bIy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="SHW-zj-yXy"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qwe-bZ-ZRQ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="88"/>
+            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
         </scene>
     </scenes>
     <resources>

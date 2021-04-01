@@ -8,8 +8,14 @@
 import Foundation
 
 class ProductResultRequest: APIRequest {
-    var method: Type = Type.GET
-    var path: String = "sites/MLC/search"
-    var parameters: [String : String] = ["q": "zapatillas%20niña"]
-    var headers: [String : String] = [:]
+    var method: Type
+    var path: String
+    var parameters: [String : String]?
+    var headers: [String : String]?
+    
+    init(searchProductsBy: String) {
+        method = Type.GET
+        path = "sites/MLC/search"
+        parameters = ["q": searchProductsBy]
+    }
 }

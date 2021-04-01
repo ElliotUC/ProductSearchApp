@@ -8,11 +8,17 @@
 import RxSwift
 
 protocol ProductResultServiceProtocol {
-    func fetchProducts() -> Observable<ProductResult>
+    func fetchProducts(searchProductsBy: String) -> Observable<ProductResult>
 }
 
 class ProductResultService: ProductResultServiceProtocol {
-    func fetchProducts() -> Observable<ProductResult> {
-        APIClient().send(apiRequest: ProductResultRequest())
+    private let apiClient: APIClient
+    
+    init(apiClient: APIClient) {
+        self.apiClient = apiClient
+    }
+    
+    func fetchProducts(searchProductsBy: String) -> Observable<ProductResult> {
+        apiClient.send(apiRequest: ProductResultRequest(searchProductsBy: searchProductsBy))
     }
 }

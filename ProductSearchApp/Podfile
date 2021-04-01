@@ -4,6 +4,7 @@
 target 'ProductSearchApp' do
   use_frameworks!
 
+    pod 'lottie-ios'
     pod 'RxSwift', '~> 5'
     pod 'RxCocoa', '~> 5'
 

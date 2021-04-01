@@ -12,12 +12,12 @@ final class ProductResultListViewModel {
     
     private let productResultService: ProductResultServiceProtocol
     
-    init(productResultService: ProductResultServiceProtocol = ProductResultService()) {
+    init(productResultService: ProductResultServiceProtocol) {
         self.productResultService = productResultService
     }
     
-    func fetchProductViewModel() -> Observable<[ProductViewModel]> {
-        productResultService.fetchProducts().map { $0.results.map {
+    func fetchProductViewModel(searchProductsBy: String) -> Observable<[ProductViewModel]> {
+        productResultService.fetchProducts(searchProductsBy: searchProductsBy).map { $0.results.map {
             ProductViewModel(product: $0)}
         }
     }

@@ -22,8 +22,8 @@ struct ProductViewModel {
     
     var displayInstallments: String {
         let installments = product.installments
-        return  "\(String(installments.quantity))x $" +                             "\(String(installments.amount))" +
-                "\(installments.rate == 0 ? "sin interés": "")"
+        return  "\(String(installments.quantity))x $ " +                            "\(String(format: "%.0f", installments.amount))" +
+                "\(installments.rate == 0 ? " sin interés": "")"
     }
     
     var displayShipping: String {
@@ -31,11 +31,8 @@ struct ProductViewModel {
         return "\(shipping.freeShipping ? "Envío gratis" : "")"
     }
     
-    var displayImage: UIImage {
-        let url = URL(string: product.thumbnail)!
-        guard let imageData = try? Data(contentsOf: url) else { return UIImage() }
-        
-        return UIImage(data: imageData)!
+    var displayImageUrl: URL? {
+        return URL(string: product.thumbnail)
     }
     
     init(product: Product) {

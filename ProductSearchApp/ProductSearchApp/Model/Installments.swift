@@ -8,7 +8,7 @@
 import Foundation
 
 struct Installments: Codable {
-    var quantity: Double
+    var quantity: Int
     var amount: Double
-    var rate: Double
+    var rate: Int
 }
