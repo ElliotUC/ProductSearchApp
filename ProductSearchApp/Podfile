@@ -3,15 +3,15 @@
 
 target 'ProductSearchApp' do
   use_frameworks!
-
     pod 'lottie-ios'
     pod 'RxSwift', '~> 5'
     pod 'RxCocoa', '~> 5'
-
+    
   target 'ProductSearchAppTests' do
     inherit! :search_paths
     pod 'RxBlocking', '~> 5'
     pod 'RxTest', '~> 5'
+    pod 'OHHTTPStubs/Swift', '~> 9'
   end
-
+  
 end

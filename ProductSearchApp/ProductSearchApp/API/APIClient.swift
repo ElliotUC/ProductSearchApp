@@ -11,7 +11,7 @@ class APIClient {
     
     private let baseURL = URL(string: "https://api.mercadolibre.com/")!
     
-    func send<T: Codable>(apiRequest: APIRequest) -> Observable<T> {
+    func send<T: Codable>(apiRequest: APIRequest) -> Single<T> {
         return Observable<T>.create { observer in
             let request = apiRequest.request(with: self.baseURL)
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
@@ -32,7 +32,6 @@ class APIClient {
             return Disposables.create {
                 task.cancel()
             }
-        }
+        }.asSingle()
     }
-    
 }
