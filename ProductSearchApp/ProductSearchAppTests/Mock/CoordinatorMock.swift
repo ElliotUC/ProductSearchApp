@@ -17,8 +17,8 @@ class CoordinatorMock: MainCoordinator {
     override func start() {
         isStartCalled = true
     }
-    
-    override func showItemDetail(productviewModel: ProductViewModel) {
+
+    override func showItemDetail(itemviewModel: ItemViewModel) {
         isShowDetail = true
     }
 }

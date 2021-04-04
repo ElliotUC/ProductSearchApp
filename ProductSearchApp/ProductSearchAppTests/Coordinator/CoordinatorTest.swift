@@ -12,9 +12,9 @@ import XCTest
 class CoordinatorTest: XCTestCase {
     
     var coordinator: MainCoordinator!
-    var productViewModel: ProductViewModel!
-    var viewController: ViewController!
-    var detailProductViewController: DetailProductViewController!
+    var itemViewModel: ItemViewModel!
+    var itemViewController: ItemViewController!
+    var itemDetailViewController: ItemDetailViewController!
     
     override func setUp() {
         super.setUp()
@@ -23,12 +23,12 @@ class CoordinatorTest: XCTestCase {
         
         let installments = Installments(quantity: 0, amount: 0, rate: 0)
         let shipping = Shipping(freeShipping: false)
-        let product = Product(id: "", title: "Zapatilla niña", price: 12000, thumbnail: "https://http2.mlstatic.com/D_922057-MLM41495056064_042020-O.jpg", installments: installments, shipping: shipping, originalPrice: 1000)
-        productViewModel = ProductViewModel(product: product)
+        let item = Item(id: "", title: "Zapatilla niña", price: 12000, thumbnail: "https://http2.mlstatic.com/D_922057-MLM41495056064_042020-O.jpg", installments: installments, shipping: shipping, originalPrice: 1000)
+        itemViewModel = ItemViewModel(item: item)
         
-        viewController = ViewController.instantiate(viewModel: ProductResultListViewModel(productResultService: ProductResultServiceMock()), coordinator: coordinator)
-        
-        detailProductViewController = DetailProductViewController.instantiate(productViewModel: productViewModel, itemResultViewModel: ItemResultViewModel(detailItemService: DetailItemServiceMock()))
+        itemViewController = ItemViewController.instantiate(viewModel: ItemResultListViewModel(itemResultService: ItemResultServiceMock()), coordinator: coordinator)
+
+        itemDetailViewController = ItemDetailViewController.instantiate(itemViewModel: itemViewModel, itemResultViewModel: ItemDetailResultViewModel(itemDetailService: ItemDetailServiceMock()))
     }
     
     override func tearDown() {
@@ -37,12 +37,12 @@ class CoordinatorTest: XCTestCase {
     
     func testStartViewController() {
         coordinator.start()
-        XCTAssertTrue(viewController.classForCoder == ViewController.self)
+        XCTAssertTrue(itemViewController.classForCoder == ItemViewController.self)
     }
     
     func testShowDetailProductViewController() {
-        coordinator.navigationController = UINavigationController(rootViewController: viewController)
-        coordinator.showItemDetail(productviewModel: productViewModel)
-        XCTAssertTrue(detailProductViewController.classForCoder == DetailProductViewController.self)
+        coordinator.navigationController = UINavigationController(rootViewController: itemViewController)
+        coordinator.showItemDetail(itemviewModel: itemViewModel)
+        XCTAssertTrue(itemDetailViewController.classForCoder == ItemDetailViewController.self)
     }
 }

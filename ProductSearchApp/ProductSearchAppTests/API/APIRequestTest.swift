@@ -21,15 +21,14 @@ class APIRequestTest: XCTestCase {
         super.tearDown()
     }
     
-    
     func testShouldReturnURLRequestForProductResultRequest() {
-        apiRequest = ProductResultRequest(searchItems: "t shirts", offset: 0)
+        apiRequest = ItemResultRequest(searchItems: "t shirts", offset: 0)
         let url = apiRequest.request(with: URL(string: "https://api.mercadolibre.com/")!)
         XCTAssertNotNil(url)
     }
     
     func testShouldReturnURLRequestForDetailItemRequest() {
-        apiRequest = DetailItemRequest(itemId: "MLC584674107")
+        apiRequest = ItemDetailRequest(itemId: "MLC584674107")
         let url = apiRequest.request(with: URL(string: "https://api.mercadolibre.com/")!)
         XCTAssertNotNil(url)
     }

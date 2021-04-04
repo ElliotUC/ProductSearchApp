@@ -10,7 +10,7 @@ import UIKit
 
 protocol Coordinator {
     func start()
-    func showItemDetail(productviewModel: ProductViewModel)
+    func showItemDetail(itemviewModel: ItemViewModel)
 }
 
 class MainCoordinator: Coordinator {
@@ -25,9 +25,9 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = ViewController.instantiate(
-            viewModel: ProductResultListViewModel(
-                productResultService: ProductResultService(
+        let viewController = ItemViewController.instantiate(
+            viewModel: ItemResultListViewModel(
+                itemResultService: ItemResultService(
                     apiClient: apiClient
                 )
             ),
@@ -40,8 +40,8 @@ class MainCoordinator: Coordinator {
         window.makeKeyAndVisible()
     }
     
-    func showItemDetail(productviewModel: ProductViewModel) {
-        let viewController = DetailProductViewController.instantiate(productViewModel: productviewModel, itemResultViewModel: ItemResultViewModel(detailItemService: DetailItemService(apiClient: apiClient)))
+    func showItemDetail(itemviewModel: ItemViewModel) {
+        let viewController = ItemDetailViewController.instantiate(itemViewModel: itemviewModel, itemResultViewModel: ItemDetailResultViewModel(itemDetailService: ItemDetailService(apiClient: apiClient)))
         
         navigationController.pushViewController(viewController, animated: true)
     }

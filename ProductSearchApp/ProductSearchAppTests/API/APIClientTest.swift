@@ -30,8 +30,8 @@ class APIClientTest: XCTestCase {
             return fixture(filePath: stubsPath!, headers: ["Content-Type": "application/json"])
         }
         
-        let productResult: ProductResult = try apiClient.send(apiRequest: ProductResultRequest(searchItems: "search", offset: 0)).toBlocking().first()!
-        XCTAssertNotNil(productResult)
+        let itemResult: ItemResult = try apiClient.send(apiRequest: ItemResultRequest(searchItems: "search", offset: 0)).toBlocking().first()!
+        XCTAssertNotNil(itemResult)
     }
     
     func testShouldReturnItemJson() throws {
@@ -40,7 +40,18 @@ class APIClientTest: XCTestCase {
             return fixture(filePath: stubsPath!, headers: ["Content-Type": "application/json"])
         }
         
-        let detailProduct: DetailProduct = try apiClient.send(apiRequest: DetailItemRequest(itemId: "MLC584674107")).toBlocking().first()!
-        XCTAssertNotNil(detailProduct)
+        let itemDetail: ItemDetail = try apiClient.send(apiRequest: ItemDetailRequest(itemId: "MLC584674107")).toBlocking().first()!
+        XCTAssertNotNil(itemDetail)
     }
+    
+    func testShouldReturnSearchEmptyData() throws {
+        stub(condition: isHost("mercadolibre.com")) { _ in
+            let stubsPath = OHPathForFile("", type(of: self))
+            return fixture(filePath: stubsPath!, headers: ["Content-Type": "application/json"])
+        }
+        
+        let itemResult: ItemResult = try apiClient.send(apiRequest: ItemResultRequest(searchItems: "search", offset: 0)).toBlocking().first()!
+        XCTAssertNotNil(itemResult)
+    }
+
 }
