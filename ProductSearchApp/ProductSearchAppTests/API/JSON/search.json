@@ -1,0 +1,42 @@
+{
+  "site_id": "MLC",
+  "query": "Motorola G6",
+  "paging": {},
+  "results": [
+    {
+      "id": "MLC584674107",
+      "site_id": "MLC",
+      "title": "Moto G6 Plus 64 Gb Índigo Oscuro 4 Gb Ram",
+      "seller": {},
+      "price": 169990,
+      "prices": {},
+      "sale_price": null,
+      "currency_id": "CLP",
+      "available_quantity": 32,
+      "sold_quantity": 4,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_pro",
+      "stop_time": "2041-02-19T04:00:00.000Z",
+      "condition": "new",
+      "permalink": "https://www.mercadolibre.cl/moto-g6-plus-64-gb-indigo-oscuro-4-gb-ram/p/MLC9452523",
+      "thumbnail": "http://http2.mlstatic.com/D_728098-MLA44156141034_112020-I.jpg",
+      "thumbnail_id": "728098-MLA44156141034_112020",
+      "accepts_mercadopago": true,
+      "installments": {},
+      "address": {},
+      "shipping": {},
+      "seller_address": {},
+      "attributes": [],
+      "differential_pricing": {},
+      "original_price": null,
+      "category_id": "MLC1055",
+      "official_store_id": null,
+      "domain_id": "MLC-CELLPHONES",
+      "catalog_product_id": "MLC9452523",
+      "tags": [],
+      "catalog_listing": true,
+      "use_thumbnail_id": true,
+      "order_backend": 1
+    }
+  ]
+}
