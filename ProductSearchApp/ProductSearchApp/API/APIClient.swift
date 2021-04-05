@@ -9,7 +9,7 @@ import RxSwift
 
 class APIClient {
     
-    private let baseURL = URL(string: "https://api.mercadolibre.com/")!
+    private let baseURL = URL(string: ConstantsAPI.baseURL)!
     
     func send<T: Codable>(apiRequest: APIRequest) -> Single<T> {
         return Observable<T>.create { observer in

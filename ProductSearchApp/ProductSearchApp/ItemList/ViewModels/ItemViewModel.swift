@@ -36,7 +36,8 @@ struct ItemViewModel {
     
     var displayInstallments: String {
         let installments = item.installments
-        let total = Converter.convertToDecimal(installments.amount)
+        let amount = Int(installments.amount)
+        let total = Converter.convertToDecimal(amount)
         
         return  "\(String(installments.quantity))x $ " +                         "\(total)" +
                 "\(installments.rate == 0 ? " sin interés": "")"

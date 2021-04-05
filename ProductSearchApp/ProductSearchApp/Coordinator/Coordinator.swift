@@ -41,7 +41,7 @@ class MainCoordinator: Coordinator {
     }
     
     func showItemDetail(itemviewModel: ItemViewModel) {
-        let viewController = ItemDetailViewController.instantiate(itemViewModel: itemviewModel, itemResultViewModel: ItemDetailResultViewModel(itemDetailService: ItemDetailService(apiClient: apiClient)))
+        let viewController = ItemDetailViewController.instantiate(itemViewModel: itemviewModel, itemDetailResultViewModel: ItemDetailResultViewModel(itemDetailService: ItemDetailService(apiClient: apiClient)), sellerResultViewModel: SellerResultViewModel(sellerService: SellerService(apiClient: apiClient)))
         
         navigationController.pushViewController(viewController, animated: true)
     }

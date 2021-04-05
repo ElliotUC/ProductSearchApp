@@ -18,6 +18,7 @@ class ListProductCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         productImage.image = nil
+        productName.sizeToFit()
     }
     
     func bind(viewModel item: ItemViewModel) {

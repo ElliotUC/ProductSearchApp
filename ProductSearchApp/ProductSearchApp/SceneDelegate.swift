@@ -19,6 +19,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         coordinator = MainCoordinator(window: window)
         coordinator?.start()
     }
-
 }
 
