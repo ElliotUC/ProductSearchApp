@@ -91,7 +91,7 @@ class ItemViewController: UIViewController {
 extension ItemViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return Constants.heightRow
+        return 150
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -113,7 +113,7 @@ extension ItemViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row + Constants.totalCells == itemsViewModel.count {
+        if indexPath.row + 20 == itemsViewModel.count {
             if(self.isSearching == false) {
                 print("Searching...")
                 self.displayCells(searchItems: searchBar.text ?? "", offset: itemsViewModel.count, isNewSearch: false)

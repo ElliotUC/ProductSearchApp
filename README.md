@@ -4,7 +4,7 @@
 
 [![Swift Version][swift-image]][swift-url]
 
-Aplicación trae un listado de items paginado desde la API de Mercado Libre, están se cargan en un UITableView el cual puede ser presionado para mostrar el detalle de un Item a través de un Coordinator.
+Aplicación trae un listado de items paginado desde la API de Mercado Libre, estás se cargan en un UITableView el cual puede ser presionado para mostrar el detalle de un Item a través de un Coordinator.
 
 ![](https://media.giphy.com/media/oqbIoHCHZtOvfdbrg8/giphy.gif)
 

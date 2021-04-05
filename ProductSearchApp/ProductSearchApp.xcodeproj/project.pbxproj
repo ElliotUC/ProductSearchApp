@@ -74,7 +74,6 @@
 		93F6B481261A7192003BEEF0 /* SellerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6B480261A7192003BEEF0 /* SellerService.swift */; };
 		93F6B487261A72BB003BEEF0 /* SellerResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6B486261A72BB003BEEF0 /* SellerResultViewModel.swift */; };
 		93F6B48B261A7386003BEEF0 /* SellerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6B48A261A7386003BEEF0 /* SellerViewModel.swift */; };
-		93F6B490261AA09A003BEEF0 /* ConstantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6B48F261AA099003BEEF0 /* ConstantsAPI.swift */; };
 		93F6B4AB261AB455003BEEF0 /* SellerServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6B4AA261AB455003BEEF0 /* SellerServiceTest.swift */; };
 		93F6B4B1261AB5A5003BEEF0 /* seller.json in Resources */ = {isa = PBXBuildFile; fileRef = 93F6B4B0261AB5A5003BEEF0 /* seller.json */; };
 		93F6B4B9261AB675003BEEF0 /* ItemDetailMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6B4B8261AB675003BEEF0 /* ItemDetailMock.swift */; };
@@ -169,7 +168,6 @@
 		93F6B480261A7192003BEEF0 /* SellerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerService.swift; sourceTree = "<group>"; };
 		93F6B486261A72BB003BEEF0 /* SellerResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerResultViewModel.swift; sourceTree = "<group>"; };
 		93F6B48A261A7386003BEEF0 /* SellerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerViewModel.swift; sourceTree = "<group>"; };
-		93F6B48F261AA099003BEEF0 /* ConstantsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAPI.swift; sourceTree = "<group>"; };
 		93F6B4AA261AB455003BEEF0 /* SellerServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerServiceTest.swift; sourceTree = "<group>"; };
 		93F6B4B0261AB5A5003BEEF0 /* seller.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seller.json; sourceTree = "<group>"; };
 		93F6B4B8261AB675003BEEF0 /* ItemDetailMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailMock.swift; sourceTree = "<group>"; };
@@ -255,7 +253,7 @@
 				93B036BD26164565009BD739 /* Coordinator */,
 				93B036C126164584009BD739 /* ItemList */,
 				93B036D826164855009BD739 /* ItemDetail */,
-				93B036D4261647F6009BD739 /* Utils */,
+				93B036D4261647F6009BD739 /* Helpers */,
 				93B036CF26164790009BD739 /* Resources */,
 				93B0350226128E14009BD739 /* Main.storyboard */,
 				93B0350526128E17009BD739 /* Assets.xcassets */,
@@ -431,15 +429,14 @@
 			path = Lottie;
 			sourceTree = "<group>";
 		};
-		93B036D4261647F6009BD739 /* Utils */ = {
+		93B036D4261647F6009BD739 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				93B0360A261540AD009BD739 /* ScreenManagement */,
 				93B035EA26139F88009BD739 /* Extensions */,
 				93F6B497261AA509003BEEF0 /* Converter */,
-				93F6B48E261AA083003BEEF0 /* Constants */,
 			);
-			path = Utils;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		93B036D826164855009BD739 /* ItemDetail */ = {
@@ -612,14 +609,6 @@
 				93F6B48A261A7386003BEEF0 /* SellerViewModel.swift */,
 			);
 			path = SellerViewModel;
-			sourceTree = "<group>";
-		};
-		93F6B48E261AA083003BEEF0 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				93F6B48F261AA099003BEEF0 /* ConstantsAPI.swift */,
-			);
-			path = Constants;
 			sourceTree = "<group>";
 		};
 		93F6B497261AA509003BEEF0 /* Converter */ = {
@@ -960,7 +949,6 @@
 				93F6B477261A6C93003BEEF0 /* Seller.swift in Sources */,
 				93F6B47D261A710E003BEEF0 /* SellerRequest.swift in Sources */,
 				93B035EC26139FB2009BD739 /* UIImageView+Download.swift in Sources */,
-				93F6B490261AA09A003BEEF0 /* ConstantsAPI.swift in Sources */,
 				93F6B48B261A7386003BEEF0 /* SellerViewModel.swift in Sources */,
 				93B035A92612D8C8009BD739 /* ItemResult.swift in Sources */,
 				93B0358926129DD4009BD739 /* Coordinator.swift in Sources */,
