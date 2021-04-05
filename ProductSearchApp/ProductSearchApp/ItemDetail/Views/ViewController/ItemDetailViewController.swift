@@ -48,10 +48,6 @@ class ItemDetailViewController: UIViewController {
         super.viewDidLoad()
         configureCarouselScrollView()
         setItemInformation(itemViewModel: itemViewModel)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         
         itemDetailResultViewModel.getItemDetailViewModel(itemId: itemViewModel.itemId)
             .observeOn(MainScheduler.instance)
