@@ -43,6 +43,5 @@ class ItemDetailViewControllerTest: XCTestCase {
         XCTAssertEqual(itemDetailViewController.horizontalScrollView.carouselDataSource?.numberOfImagesInSection(), 1)
         XCTAssertEqual(itemDetailViewController.originalPrice.text, "$ 1.000")
         XCTAssertEqual(itemDetailViewController.priceItem.text, "$ 12.000")
-        XCTAssertEqual(itemDetailViewController.sellerNickName.text, "HUIONCL 1")
     }
 }
