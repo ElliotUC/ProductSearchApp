@@ -15,7 +15,7 @@ class ItemResultRequest: APIRequest {
     
     init(searchItems by: String, offset: Int) {
         method = Type.GET
-        path = ConstantsAPI.searchItems
+        path = "sites/MLC/search"
         parameters = ["q": by, "offset": String(offset)]
     }
 }

@@ -15,7 +15,7 @@ class ItemDetailRequest: APIRequest {
     
     init(itemId: String) {
         method = .GET
-        path = "\(ConstantsAPI.searchByItem)\(itemId)"
+        path = "items/\(itemId)"
         parameters = [:]
         headers = [:]
     }
