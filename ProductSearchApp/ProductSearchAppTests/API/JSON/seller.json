@@ -1,0 +1,40 @@
+{
+  "id": 570184485,
+  "nickname": "HUIONCL1",
+  "registration_date": "2020-05-18T15:50:39.000-04:00",
+  "country_id": "CL",
+  "address": {
+    "city": "Pudahuel",
+    "state": "CL-RM"
+  },
+  "user_type": "normal",
+  "tags": [
+    "normal"
+  ],
+  "logo": null,
+  "points": 325,
+  "site_id": "MLC",
+  "permalink": "http://perfil.mercadolibre.cl/HUIONCL1",
+  "seller_reputation": {
+    "level_id": "5_green",
+    "power_seller_status": "platinum",
+    "transactions": {
+      "canceled": 130,
+      "completed": 5522,
+      "period": "historic",
+      "ratings": {
+        "negative": 0.01,
+        "neutral": 0.01,
+        "positive": 0.98
+      },
+      "total": 5652
+    }
+  },
+  "buyer_reputation": {
+    "tags": [
+    ]
+  },
+  "status": {
+    "site_status": "active"
+  }
+}
