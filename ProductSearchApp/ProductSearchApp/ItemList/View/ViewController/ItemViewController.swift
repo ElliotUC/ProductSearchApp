@@ -40,7 +40,7 @@ class ItemViewController: UIViewController {
     private func configureScreenManagement() {
         screenManagement = ScreenManagement(frame: self.view.bounds)
         screenManagement.showScreenView(type: .welcome)
-        self.view.addSubview(screenManagement)
+        self.view.addSubViewInBackgroundThread(view: screenManagement)
     }
     
     private func configureSearchBar() {
