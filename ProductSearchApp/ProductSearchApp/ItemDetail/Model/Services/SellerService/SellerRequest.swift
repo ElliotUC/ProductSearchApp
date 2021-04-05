@@ -16,7 +16,7 @@ class SellerRequest: APIRequest {
     
     init(sellerId: String) {
         method = .GET
-        path = "\(ConstantsAPI.searchSeller)\(sellerId)"
+        path = "users/\(sellerId)"
         parameters = [:]
         headers = [:]
     }
